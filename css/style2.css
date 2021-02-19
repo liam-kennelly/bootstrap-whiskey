@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    width: 400px;
 }
 
 .alert-container .col-12 {
@@ -8,31 +7,22 @@ body {
     padding-right: 0;
 }
 
-.site-wide-alert {
-    color: #544600;
-    background-color: #eec802;
-    border-color: #eec802;
-    padding: 5px 15px;
-    margin-bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 0;
-}
-
-
 .callout-container {
     height: 100vh;
 
-    background: url('../images/whiskey-background.jpg') no-repeat bottom right fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url("../images/whiskey-background.jpg") no-repeat bottom right fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .opaque-overlay {
@@ -41,25 +31,45 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 
-/* Navbar */
+.quotes-container {}
 
+.features-container {}
+
+/* Block Dividers */
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+/*Navbar*/
 .navalert-container {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     padding-left: 0;
     padding-right: 0;
+    
+    z-index: 1;
 }
 
 .navbar {
     margin-bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .25);
     border: 0;
+    width: 100%;
+    
+    
 }
 
 .navbar .navbar-toggler {
@@ -74,23 +84,30 @@ body {
     font-weight: bold;
 }
 
+.container-fluid .navalert-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
 
-/* Jumbotron */
+/*Jumbotron*/
 
 .jumbotron {
     background-color: transparent;
 }
 
-.jumbotron h1 {
+.jumbotron-header {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
 }
 
 .jumbotron .lead {
+    margin: 25px;
     color: #a7a7a7;
-    margin: 25px 0;
 }
 
 .jumbotron small {
@@ -99,25 +116,7 @@ body {
     color: #d0d0d0;
 }
 
-/* Block dividers */
-
-.block-divider {
-    width: 75px;
-    height: 5px;
-    border: 0;
-    background-color: #444;
-}
-
-.block-divider--orange {
-    background-color: #f05f40;
-}
-
-.block-divider--short {
-    width: 35px;
-}
-
 /* Buttons */
-
 .btn--cta {
     font-weight: bold;
     border-radius: 23px;
@@ -136,5 +135,5 @@ body {
 .btn--red:active:focus {
     background-color: #df4929;
     border-color: #df4929;
-    color: white;
 }
+
