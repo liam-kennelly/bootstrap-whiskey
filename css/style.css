@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    width: 400px;
 }
 
 .alert-container .col-12 {
@@ -43,6 +42,22 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.quotes-container {}
+
+.features-container {}
+
+/* Page headers */
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
 
 /* Navbar */
 
@@ -114,6 +129,12 @@ body {
 
 .block-divider--short {
     width: 35px;
+}
+
+/* content containers */
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* Buttons */
